@@ -1,12 +1,15 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Banner from "../components/Banner";
 
 const About = () => {
+  const img_banner = {
+    src: "./assets/imgs/about_banner.jpg",
+    name: "About Banner",
+    text: "",
+  };
   return (
     <div>
-      <Header />
-      <h1>About</h1>
+      <Banner img={img_banner} />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
         voluptates quod, distinctio ipsa quae debitis ex quam. Quia, labore!
@@ -21,7 +24,6 @@ const About = () => {
         enim, delectus omnis qui. Quibusdam sequi facilis officia numquam
         laboriosam.
       </p>
-      <Footer />
     </div>
   );
 };
