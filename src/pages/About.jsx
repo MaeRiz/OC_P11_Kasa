@@ -1,15 +1,16 @@
 import React from "react";
 import Banner from "../components/Banner";
+import img_banner from "../assets/imgs/about_banner.jpg";
 
 const About = () => {
-  const img_banner = {
-    src: "./assets/imgs/about_banner.jpg",
+  const banner = {
+    src: img_banner,
     name: "About Banner",
     text: "",
   };
   return (
     <div>
-      <Banner img={img_banner} />
+      <Banner img={banner} />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
         voluptates quod, distinctio ipsa quae debitis ex quam. Quia, labore!
