@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Banner from "../components/Banner";
 import img_banner from "../assets/imgs/about_banner.jpg";
 
@@ -8,23 +8,14 @@ const About = () => {
     name: "About Banner",
     text: "",
   };
+
+  useEffect(() => {
+    document.title = "Kasa - A Propos";
+  }, []);
+
   return (
     <div>
       <Banner img={banner} />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-        voluptates quod, distinctio ipsa quae debitis ex quam. Quia, labore!
-        Molestiae vitae distinctio recusandae aliquam architecto consequuntur
-        hic quibusdam? Voluptatibus aperiam provident cum veritatis. Quisquam
-        temporibus repudiandae est corporis facere id porro, quidem ullam aut?
-        Fugiat, distinctio esse odit sint hic voluptate facere sed nisi
-        repellendus voluptatibus optio reprehenderit molestias. Alias ullam iure
-        eaque at fuga nisi quae esse, cupiditate laborum asperiores quos
-        exercitationem minima aspernatur. Non quidem quam animi mollitia, aut
-        est molestias ab neque id earum exercitationem aspernatur recusandae
-        enim, delectus omnis qui. Quibusdam sequi facilis officia numquam
-        laboriosam.
-      </p>
     </div>
   );
 };

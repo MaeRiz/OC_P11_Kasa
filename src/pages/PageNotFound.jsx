@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const PageNotFound = () => {
+  useEffect(() => {
+    document.title = "Kasa - Page introuvable";
+  }, []);
+
   return (
     <div>
       <div className="container-pagenotfound">
