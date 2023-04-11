@@ -14,7 +14,11 @@ const DropDown = ({ title, description }) => {
         <p className="arrow">❯</p>
       </div>
       <div className="dropdown-content">
-        <p>{description}</p>
+        <ul>
+          {description.map((item, index) => (
+            <li key={`dd_desc_${index}`}>{item}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );

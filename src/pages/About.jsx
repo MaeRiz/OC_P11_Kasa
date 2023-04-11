@@ -41,13 +41,19 @@ const About = () => {
       <Banner img={banner} />
       <DropDown
         title={fiability_dd.title}
-        description={fiability_dd.description}
+        description={[fiability_dd.description]}
       />
-      <DropDown title={respect_dd.title} description={respect_dd.description} />
-      <DropDown title={service_dd.title} description={service_dd.description} />
+      <DropDown
+        title={respect_dd.title}
+        description={[respect_dd.description]}
+      />
+      <DropDown
+        title={service_dd.title}
+        description={[service_dd.description]}
+      />
       <DropDown
         title={security_dd.title}
-        description={security_dd.description}
+        description={[security_dd.description]}
       />
     </div>
   );

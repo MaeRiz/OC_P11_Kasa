@@ -27,7 +27,10 @@ const Lodgement = () => {
       </div>
 
       <Rating /> */}
-      <DropDown title="Description" description={lodge.description} />
+      <div className="details">
+        <DropDown title="Description" description={[lodge.description]} />
+        <DropDown title="Equipements" description={lodge.equipments} />
+      </div>
     </div>
   );
 };
