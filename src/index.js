@@ -20,7 +20,7 @@ root.render(
           <Route path="/lodgement/:lodgeId" element={<Lodgement />} />
           <Route path="*" element={<PageNotFound/>} />
         </Routes>
-      <Footer /> 
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

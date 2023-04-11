@@ -8,9 +8,14 @@ $primary-color: #FF6060;
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: $default-font;
     padding: 40px 80px 40px 80px;
+    min-height: 100%;
 }
 
 li {

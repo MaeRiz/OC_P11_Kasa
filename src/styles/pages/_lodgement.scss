@@ -1,6 +1,9 @@
 #lodge {
 
-    position: relative;
+    .infos {
+        position: relative;
+        margin-top: 40px;
+    }
 
     h3 {
         font-size: 35px;
@@ -35,10 +38,7 @@
     .rating {
         position: absolute;
         right: 0;
-        font-size: 21px;
-        width: 160px;
-        display: flex;
-        justify-content: space-between;
+        top: 90px;
     }
 
     .profil {
@@ -46,7 +46,10 @@
         top: 0;
         right: 0;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
+        color: $primary-color;
+        width: 150px;
 
         img {
             border-radius: 100%;
