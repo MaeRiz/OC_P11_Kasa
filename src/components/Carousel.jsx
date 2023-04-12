@@ -40,19 +40,25 @@ const Carousel = ({ pictures, name }) => {
       {pictures.map((item, index) => (
         <div key={name + index} className="slide">
           <img src={item} alt={`${name} ${index}`} />
-          <div className="numberText">
-            {index + 1}/{pictures.length}
-          </div>
+          {pictures.length > 1 ? (
+            <div className="numberText">
+              {index + 1}/{pictures.length}
+            </div>
+          ) : null}
         </div>
       ))}
-      <i
-        className="control left fa-solid fa-chevron-left"
-        onClick={prevSlideHandler}
-      ></i>
-      <i
-        className="control right fa-solid fa-chevron-right"
-        onClick={nextSlideHandler}
-      ></i>
+      {pictures.length > 1 ? (
+        <div>
+          <i
+            className="control left fa-solid fa-chevron-left"
+            onClick={prevSlideHandler}
+          ></i>{" "}
+          <i
+            className="control right fa-solid fa-chevron-right"
+            onClick={nextSlideHandler}
+          ></i>
+        </div>
+      ) : null}
     </div>
   );
 };
