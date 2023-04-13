@@ -7,7 +7,7 @@ import Lodgement from "./pages/Lodgement";
 import PageNotFound from "./pages/PageNotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import './styles/index.scss'
+import './scss/index.scss'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
