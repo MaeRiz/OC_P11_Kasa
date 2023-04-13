@@ -4,6 +4,7 @@ import Rating from "../components/Rating";
 import DropDown from "../components/DropDown";
 import Carousel from "../components/Carousel";
 import PageNotFound from "./PageNotFound";
+import Tags from "../components/Tags";
 
 const Lodgement = () => {
   let { lodgeId } = useParams();
@@ -22,12 +23,7 @@ const Lodgement = () => {
       <div className="infos">
         <h3>{lodge.title}</h3>
         <h4>{lodge.location}</h4>
-
-        <ul className="tags">
-          {lodge.tags.map((tag, index) => (
-            <li key={tag + index}>{tag}</li>
-          ))}
-        </ul>
+        <Tags tagslist={lodge.tags} />
         <div className="profil-rate">
           <div className="profil">
             <p>{lodge.host.name}</p>
