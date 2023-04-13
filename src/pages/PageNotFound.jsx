@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const PageNotFound = () => {
   useEffect(() => {
@@ -7,14 +7,12 @@ const PageNotFound = () => {
   }, []);
 
   return (
-    <div>
-      <div className="container-pagenotfound">
-        <h1>404</h1>
-        <h2>Oups! La page que vous demandez n'existe pas.</h2>
-        <NavLink to={"/"}>
-          <p>Retourner sur la page d'accueil</p>
-        </NavLink>
-      </div>
+    <div className="container-pagenotfound">
+      <h1>404</h1>
+      <h2>Oups! La page que vous demandez n'existe pas.</h2>
+      <Link to={"/"}>
+        <p>Retourner sur la page d'accueil</p>
+      </Link>
     </div>
   );
 };

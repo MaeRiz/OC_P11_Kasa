@@ -8,3 +8,12 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+@include mobile-only {
+    .cards-container {
+        padding: 0;
+        background-color: #ffffff00;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+}

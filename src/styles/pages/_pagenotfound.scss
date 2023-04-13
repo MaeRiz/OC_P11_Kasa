@@ -2,7 +2,7 @@
     color: $primary-color;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
 
     h1{
         font-size: 250px;
@@ -10,6 +10,19 @@
 
     a{
         color: $primary-color;
-        margin-top: 200px;
+        margin-top: 100px;
+    }
+}
+
+@include mobile-only {
+    .container-pagenotfound {
+        padding-top: 100px;
+        h1 {
+            font-size: 100px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 100;
+        }
     }
 }

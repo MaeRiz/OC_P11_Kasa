@@ -49,3 +49,9 @@
       opacity: 1;
     }
 }
+
+@include mobile-only {
+    .dropdown {
+        width: 100% !important;
+    }
+}

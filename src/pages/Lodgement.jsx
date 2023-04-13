@@ -28,12 +28,13 @@ const Lodgement = () => {
             <li key={tag + index}>{tag}</li>
           ))}
         </ul>
-        <div className="profil">
-          <p>{lodge.host.name}</p>
-          <img src={lodge.host.picture} alt={lodge.host.name} />
+        <div className="profil-rate">
+          <div className="profil">
+            <p>{lodge.host.name}</p>
+            <img src={lodge.host.picture} alt={lodge.host.name} />
+          </div>
+          <Rating rate={lodge.rating} />
         </div>
-
-        <Rating rate={lodge.rating} />
         <div className="details">
           <DropDown title="Description" description={[lodge.description]} />
           <DropDown title="Equipements" description={lodge.equipments} />

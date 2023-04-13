@@ -1,8 +1,4 @@
 @import './settings';
-@import './pages/home';
-@import './pages/pagenotfound';
-@import './pages/about';
-@import './pages/lodgement';
 @import './components/footer';
 @import './components/header';
 @import './components/banner';
@@ -10,3 +6,7 @@
 @import './components/dropdown';
 @import './components/carousel';
 @import './components/rating';
+@import './pages/home';
+@import './pages/pagenotfound';
+@import './pages/about';
+@import './pages/lodgement';

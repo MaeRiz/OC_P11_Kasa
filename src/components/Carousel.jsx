@@ -5,6 +5,7 @@ const Carousel = ({ pictures, name }) => {
 
   useEffect(() => {
     showSlide(sliderPosition);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const prevSlideHandler = () => {

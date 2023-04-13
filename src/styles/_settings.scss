@@ -2,6 +2,18 @@ $default-font: 'Montserrat', sans-serif;
 
 $primary-color: #FF6060;
 
+@mixin mobile-only {
+    @media screen and (max-width: 650px){
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: 650px){
+        @content;
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -14,8 +26,12 @@ html {
 
 body {
     font-family: $default-font;
-    padding: 40px 80px 40px 80px;
+    padding: 40px 80px 250px 80px;
     min-height: 100%;
+
+    @include mobile-only {
+        padding: 20px 20px 250px 20px;
+    }
 }
 
 li {

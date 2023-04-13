@@ -24,3 +24,17 @@
         border-bottom: solid 2px $primary-color;
     }
 }
+
+@include mobile-only {
+    .nav-bar {
+        width: 160px;
+    }
+
+    .header {
+        margin-bottom: 20px;
+        img {
+            width: 130px;
+        }
+    }
+
+}
